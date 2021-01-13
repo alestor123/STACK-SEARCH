@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This is a simple code for getting solutions from stack overflow in the comfort of your cli",
   "main": "App.js",
+  "bin": {
+    "stack-search": "cli.js"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "chalk": "^4.1.0",
