@@ -8,5 +8,5 @@ console.log(chalk.red('Search Key Not Found'))
 process.exit(0)}
 (async () => {
 var data = await ss(searchKey)
-data.forEach((item,index) => console.log((data.length-index)+" "+chalk.bold.yellow(item.title)+"\n"+chalk.blue(item.link)+'\n\n'))
+data.map    ((item,index) => console.log((data.length-index)+" "+chalk.bold.yellow(item.title)+"\n"+chalk.blue(item.link)+'\n\n'))
 })();
